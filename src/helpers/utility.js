@@ -17,6 +17,5 @@ export function getSTList() {
 
 export function getJsonCookies() {
   let token = getUserList();
-  console.log(`token`, token);
   if (token.user_name === "admin" && token.password === "admin") return true;
 }
