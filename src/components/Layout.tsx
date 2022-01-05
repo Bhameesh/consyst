@@ -1,7 +1,13 @@
 import React from "react";
+import Topbar from "./Topbar";
 
-const Layout = ({ children }) => {
-  return <main>{children}</main>;
+const Layout = ({ children, settings}) => {
+  return (
+    <React.Fragment>
+      {settings.topbar ? <Topbar /> : null}
+      <main>{children}</main>
+    </React.Fragment>
+  );
 };
 
 export default Layout;

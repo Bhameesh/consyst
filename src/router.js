@@ -79,7 +79,7 @@ const AppRouter = (props) => {
               exact
               path={"/"}
               layoutSettings={{
-                sidebar: true,
+                topbar: true,
                 footer: true,
               }}
               component={asyncComponent(() => import("./pages/home"))}
@@ -88,7 +88,7 @@ const AppRouter = (props) => {
               exact
               path={"/content"}
               layoutSettings={{
-                sidebar: true,
+                topbar: true,
                 footer: true,
               }}
               component={asyncComponent(() => import("./pages/content"))}
